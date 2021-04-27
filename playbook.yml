@@ -1,0 +1,12 @@
+---
+- hosts: all
+  collections:
+  - redhat.rhel_system_roles
+  roles:
+  - role: redhat.rhel_system_roles.selinux
+    become: true
+  tasks:
+  - name: Enable SELinux
+    selinux:
+      policy: targeted
+      state: enforcing
