@@ -1,1 +1,4 @@
-
+collections:
+  - name: redhat.rhel_system_roles
+    version: 1.0.0
+    source: https://cloud.redhat.com/
