@@ -6,7 +6,7 @@
   - role: redhat.rhel_system_roles.selinux
     become: true
   tasks:
-  - name: Enable SELinux
-    selinux:
-      policy: targeted
-      state: enforcing
+    - name: Enable SELinux
+      selinux:
+        policy: targeted
+        state: enforcing
