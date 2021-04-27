@@ -9,3 +9,4 @@
       selinux:
         policy: targeted
         state: enforcing
+      become: true
