@@ -3,7 +3,7 @@
   collections:
   - ansible.tower
   roles:
-  - role: redhat.rhel_system_roles.selinux
+  - role: tower_job_list:
   tasks:
     - name: List running jobs for the testing.yml playbook
       tower_job_list:
