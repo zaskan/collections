@@ -1,2 +1,2 @@
 collections:
-  - name: redhat.rhel_system_roles
+  - name: ansible.tower
