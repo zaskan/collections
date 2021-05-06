@@ -2,8 +2,6 @@
 - hosts: all
   collections:
   - ansible.tower
-  roles:
-  - role: tower_job_list:
   tasks:
     - name: List running jobs for the testing.yml playbook
-      tower_job_list:
+      ansible.tower.tower_job_list:
