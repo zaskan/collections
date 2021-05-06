@@ -1,1 +1,1 @@
-# rhel-system-roles
+# Collections tests
