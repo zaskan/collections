@@ -1,12 +1,9 @@
 ---
 - hosts: all
   collections:
-  - redhat.rhel_system_roles
+  - ansible.tower
   roles:
   - role: redhat.rhel_system_roles.selinux
   tasks:
-    - name: Enable SELinux
-      selinux:
-        policy: targeted
-        state: enforcing
-      become: true
+    - name: List running jobs for the testing.yml playbook
+      tower_job_list:
