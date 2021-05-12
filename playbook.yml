@@ -6,3 +6,5 @@
     - name: List running jobs for the testing.yml playbook
       ansible.tower.tower_job_list:
         validate_certs: no
+    - name: Expose variables
+      shell: export
