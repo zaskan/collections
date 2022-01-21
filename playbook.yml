@@ -3,7 +3,7 @@
   collections:
   - community.general
   tasks:
-    - name: List running jobs for the testing.yml playbook
+    - name: Test Zypper
       community.general.zypper:
         name: nmap
         state: present
