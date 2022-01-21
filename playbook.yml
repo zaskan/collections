@@ -1,10 +1,9 @@
 ---
 - hosts: all
   collections:
-  - ansible.tower
+  - community.general
   tasks:
     - name: List running jobs for the testing.yml playbook
-      ansible.tower.tower_job_list:
-        validate_certs: no
-    - name: Expose variables
-      shell: export
+      community.general.zypper:
+        name: nmap
+        state: present
